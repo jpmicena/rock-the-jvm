@@ -44,18 +44,6 @@ object MethodNotations extends App{
   println(mary.apply())
   println(mary()) // equivalent
 
-  /////
-  val maryCodenamed = mary + "the rockstar"
-  println(maryCodenamed())
-  println((mary + "the rockstar").apply())
-
-  val maryOlder = +mary
-  println(maryOlder())
-
-  println(mary learnsScala)
-
-  println(mary.apply(2))
-
   /*
     1. Overload the + operator
        mary + "the rockstar" => new person "Mary (the rockstar)"
@@ -70,5 +58,17 @@ object MethodNotations extends App{
     4. Overload the apply method
        mary.apply(2) => "Mary watched Inception 2 times"
    */
+
+  /////
+  val maryCodenamed = mary + "the rockstar"
+  println(maryCodenamed())
+  println((mary + "the rockstar").apply())
+
+  val maryOlder = +mary
+  println(maryOlder())
+
+  println(mary learnsScala)
+
+  println(mary.apply(2))
 
 }
