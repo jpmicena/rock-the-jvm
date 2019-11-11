@@ -80,10 +80,10 @@ object ListTest extends App {
 
   println(cloneListOfIntegers == listOfIntegers)
 
-//  val list = new Cons(1, new Cons(2, new Cons(3, Empty)))
-////  println(list.tail.head)
-////  println(list.add(4).head)
-////  println(list.isEmpty)
-////
-////  println(list.toString)
+  val combinations = for {
+    n <- listOfIntegers
+    string <- listOfStrings
+  } yield n + "-" + string
+
+  println(combinations)
 }
